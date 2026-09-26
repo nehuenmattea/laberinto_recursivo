@@ -36,9 +36,8 @@ class Laberinto:
         return self.celdas.get((r, c)) in (SALIDA1, SALIDA2)
 
     # ------------------------------------------------------------
-    # Generación del laberinto (RECURSIVA):
-    # Algoritmo Recursive Backtracker con inercia direccional
-    # para evitar aspecto de ruido/QR y garantizar pasillos claros.
+    # Generación del laberinto (RECURSIVO):
+    # Algoritmo Recursive Backtracker 
     # ------------------------------------------------------------
     def _generar(self, semilla):
         rng = random.Random(semilla)
